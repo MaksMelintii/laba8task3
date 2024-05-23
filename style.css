@@ -1,0 +1,26 @@
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width: 30%;
+    background-color: #F3D9B1;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.task {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    user-select: all;
+    background-color: #C2533B;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+.task.dragging {
+    pointer-events: none;
+}
